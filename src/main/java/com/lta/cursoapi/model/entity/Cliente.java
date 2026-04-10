@@ -1,10 +1,7 @@
 package com.lta.cursoapi.model.entity;
 
 import jakarta.persistence.*;
-import lombok.Data;
-import lombok.ToString;
-import lombok.NoArgsConstructor;
-import lombok.AllArgsConstructor;
+import lombok.*;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -13,9 +10,9 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
+@Builder
 @Entity
 @Table(name="clientes")
-
 public class Cliente implements Serializable {
     @Id
     @Column(name = "id_cliente")
